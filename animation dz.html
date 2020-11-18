@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- saved from url=(0149)file:///C:/Users/%D0%94%D0%B0%D0%BD%D0%B8%D0%BB/OneDrive/%D0%94%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/GitHub/Wikimedium/animation%20dz.html -->
+<html lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title></title>
+    <style media="screen">
+        body {
+          height: 2200px;
+        }
+        .first {
+          width: 300px;
+          height: 300px;
+          background-color: violet;
+          margin: 0 auto;
+          position: relative;
+          top: 84px;
+          animation: first2 8s infinite normal ease-in-out;
+        }
+        .first1 {
+          width: 30px;
+          height: 30px;
+          background-color: red;
+          margin: 0 auto;
+          position: relative;
+          top: -83px;
+          animation: first1 2s infinite ease-in-out;
+        }
+        @keyframes first1 {
+          70%{
+            opacity: 1;
+          }
+          100%{
+            border-radius: 50%;
+            transform: scale(10);
+            opacity: 0;
+          }
+        }
+        @keyframes first2 {
+          0% {
+            transform: rotate(0deg);
+          }
+          25% {
+            transform: rotate(90deg);
+          }
+          50% {
+            transform: rotate(180deg);
+          }
+          75% {
+            transform: rotate(270deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        .second1 {
+          width: 100px;
+          height: 100px;
+          margin-left: 200px;
+          top: 200px;
+          position: relative;
+        }
+        .second2 {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          position: relative;
+          animation: second2 3s infinite alternate cubic-bezier(0.9, -0.9 , 0.6, -0.6);
+        }
+        @keyframes second2 {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(200px) rotate(180deg) scale(2) ;
+            background-color: yellow;
+          }
+        }
+        .third {
+          width: 100px;
+          height: 100px;
+          background-color: pink;
+          margin-left: 900px;
+          position: relative;
+          top: 100px;
+          animation: third3 6s infinite alternate backwards ease-in-out;
+        }
+        @keyframes third3 {
+          0%, 10% {
+            transform: scale(2);
+          }
+          30% {
+            transform: rotateX(-180deg);
+            background-color: blue;
+          }
+          50% {
+            transform: rotateZ(-360deg) translateY(200px) scale(1.8);
+          }
+          100% {
+            transform: none;
+            background-color: violet;
+          }
+        }
+        .fourth {
+          width: 200px;
+          height: 200px;
+          background-color: pink;
+          margin-left: 150px;
+          position: relative;
+          top: 500px;
+          animation: fourth4 0.2s infinite alternate ease-in-out;
+        }
+        @keyframes fourth4 {
+          0%{
+            transform: rotateZ(-1deg);
+          }
+          5%{
+            transform: rotateZ(2deg);
+          }
+          10%{
+            transform: rotateZ(-2deg);
+          }
+          15%{
+            transform: rotateZ(1deg);
+          }
+          70% {
+            transform: scale(1.05) rotateX(30deg);
+          }
+          100% {
+            transform: scale(1.2) rotateX(-30deg);
+          }
+        }
+        .fifth {
+          width: 100px;
+          height: 100px;
+          background-color: blue;
+          margin-left: 550px;
+          position: relative;
+          top: 150px;
+          animation: fifth5 2s infinite alternate steps(10,start);
+        }
+        @keyframes fifth5 {
+          0% {
+            filter: blur(5px);
+          }
+          100%{
+            background-color: red;
+            transform: scaleX(2) scaleY(2) rotate(180deg);
+            border-radius: 50%;
+            filter: blur(20px);
+          }
+        }
+        .sixth {
+          width: 100px;
+          height: 100px;
+          background-color: blue;
+          margin-left: 400px;
+          position: relative;
+          top: 500px;
+          animation: sixth6 3s infinite cubic-bezier(1,-1,.3, 2);
+        }
+        @keyframes sixth6 {
+          30%{
+            transform: translateX(-12em);
+          }
+          50% {
+            transform: scale(2);
+            background-color: yellow;
+          }
+          70%{
+            transform: translateX(12em);
+          }
+        }
+        .seventh {
+          width: 150px;
+          height: 150px;
+          background-color: red;
+          margin-left: 900px;
+          position: relative;
+          top: 170px;
+          animation: seventh7 7s infinite cubic-bezier(1,-1,.3, 2);
+        }
+        .eighth{
+          width: 75px;
+          height: 75px;
+          background-color: brown;
+          margin-left: 800px;
+          position: relative;
+          top: 500px;
+          animation: seventh7 4s infinite ease-in;
+          transform-origin: 10em 50%;
+        }
+        @keyframes seventh7 {
+          40%{
+            transform: rotateZ(360deg) scale(-1);
+            border-radius: 50%;
+            background-color: black;
+          }
+        }
+        .ninth {
+          width: 200px;
+          height: 100px;
+          background-color: pink;
+          margin-left: 250px;
+          position: relative;
+          top: 400px;
+          animation: ninth9 2s infinite alternate ease-in-out;
+          /* transform-origin: 10em 70%; */
+        }
+        @keyframes ninth9 {
+          50% {
+            filter: blur(10px);
+          }
+          100% {
+            transform: translateY(50px);
+          }
+        }
+        @keyframes tenth10 {
+          0% {
+            transform: translateY(-40px);
+          }
+          100% {
+            transform: translateY(90px);
+          }
+        }
+        .tenth {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          margin-left: 300px;
+          position: relative;
+          top: 300px;
+          animation: tenth10 2s infinite alternate ease-in-out;
+          /* transform-origin: 10em 70%; */
+        }
+    </style>
+  </head>
+  <body>
+  <div class="first"></div>
+  <div class="first1"></div>
+  <div class="second1">
+    <div class="second2"></div>
+  </div>
+  <div class="third"></div>
+  <div class="fourth"></div>
+  <div class="fifth"></div>
+  <div class="sixth"></div>
+  <div class="seventh"></div>
+  <div class="eighth"></div>
+  <div class="ninth"></div>
+  <div class="tenth"></div>
+  
+
+</body></html>
