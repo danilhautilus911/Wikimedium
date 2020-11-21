@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .first {
+        height: 300px;
+        width: 300px;
+        position: relative;
+        left: 100px;
+        top: 100px;
+        /* padding: 100px; */
+      }
+      .first1 {
+        height: 100px;
+        width: 100px;
+        margin: 20px;
+        border-radius: 50%;
+        background-color: red;
+        filter: blur(20px);
+        position: relative;
+        animation: first1a 14s alternate infinite ease-in;
+      }
+      @keyframes first1a {
+        100% {transform: translateX(100px) translateY(30px);}
+      }
+      .first2 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: #FF4500;
+        filter: blur(30px);
+        position: relative;
+        margin-top: -50px;
+        animation: first2a 12s alternate infinite;
+      }
+      @keyframes first2a {
+        100% {transform: translateX(30px);}
+      }
+      .first3 {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-color: #FFA500;
+        filter: blur(40px);
+        position: relative;
+        margin-left: 80px;
+        margin-top: -130px;
+        animation: first3a 10s alternate infinite;
+      }
+      @keyframes first3a {
+        100% {transform: rotateZ(230deg) translateY(50px); background-color: #9932CC; filter: blur(25px);}
+      }
+      .first4 {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-color: red;
+        filter: blur(30px);
+        position: relative;
+        margin-left: 160px;
+        margin-top: -70px;
+        animation: first4a 7s alternate infinite;
+      }
+      @keyframes first4a {
+        100% {transform: translateY(30px) translateX(-50px); filter: blur(25px); background-color: orange;}
+      }
+      .first5 {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: #FF4500;
+        filter: blur(30px);
+        position: relative;
+        margin-left: 80px;
+        margin-top: -50px;
+        animation: first5a 8s alternate infinite;
+      }
+      @keyframes first5a {
+        100% {transform: rotateZ(-60deg) translateY(-30px); filter: blur(15px); background-color: red}
+      }
+      .first6 {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: blue;
+        filter: blur(20px);
+        position: relative;
+        margin-left: 80px;
+        margin-top: -110px;
+        animation: first6a 8s alternate infinite;
+      }
+      @keyframes first6a {
+        100% {transform: translateX(60px) translateY(20px);}
+      }
+      .first7 {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #0000CD;
+        filter: blur(25px);
+        position: relative;
+        margin-left: 80px;
+        margin-top: -110px;
+        animation: first7a 10s alternate infinite;
+      }
+      @keyframes first7a {
+        100% {transform: scale(1.2) translateX(10px) translateY(15px); filter: blur(18px);}
+      }
+      .first8 {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #9932CC;
+        filter: blur(25px);
+        position: relative;
+        margin-left: 140px;
+        margin-top: -70px;
+        animation: first8a 16s alternate infinite;
+      }
+      @keyframes first8a {
+        50% {
+          filter: blur(15px); transform: scale(1.3);
+        }
+        100% {transform: rotateZ(180deg) translateX(80px) translateY(-10px); background-color: #FF4500;}
+      }
+      /* .first9 {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: blue;
+        filter: blur(25px);
+        position: relative;
+        margin-left: 150px;
+        margin-top: 100px;
+      } */
+      .second {
+        height: 300px;
+        width: 300px;
+        position: relative;
+        top: -200px;
+        left: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .second1 {
+        height: 20px;
+        width: 20px;
+        /* border-radius: 50%; */
+        background: red;
+        position: absolute;
+        animation: second1a 9s alternate infinite ease-in;
+        opacity: 0;
+      }
+      .second2 {
+        height: 20px;
+        width: 20px;
+        /* border-radius: 50%; */
+        background: #9932CC;
+        position: absolute;
+        animation: second2a 9s alternate infinite ease-in;
+        opacity: 0;
+      }
+      .second3 {
+        height: 20px;
+        width: 20px;
+        /* border-radius: 50%; */
+        background: orange;
+        position: absolute;
+        animation: second3a 9s alternate infinite ease-in;
+        opacity: 0;
+      }
+      .second4 {
+        height: 20px;
+        width: 20px;
+        /* border-radius: 50%; */
+        background: #FF4500;
+        position: absolute;
+        animation: second4a 9s alternate infinite ease-in;
+        opacity: 0;
+      }
+      .second5 {
+        height: 20px;
+        width: 20px;
+        /* border-radius: 50%; */
+        background: #9932CC;
+        position: absolute;
+        animation: second5a 9s alternate infinite ease-in;
+        opacity: 0;
+      }
+      @keyframes second1a {
+        0% {opacity: 1; transform: scale(1);}
+        55% {opacity: 1; transform: scale(19) rotate(180deg); }
+        100% {opacity: 1; transform: scale(19) rotate(180deg); }
+      }
+      @keyframes second2a {
+        0% {opacity: 1; transform: scale(1);}
+        11.2% {opacity: 1; transform: scale(1);}
+        67.5% {opacity: 1; transform: scale(19) rotate(180deg); }
+        100% {opacity: 1; transform: scale(19) rotate(180deg);  }
+      }
+      @keyframes second3a {
+        0% {opacity: 1; transform: scale(1);}
+        22.4% {opacity: 1; transform: scale(1);}
+        78.4% {opacity: 1; transform: scale(19)rotate(180deg); }
+        100% {opacity: 1; transform: scale(19)rotate(180deg);  }
+      }
+      @keyframes second4a {
+        0% {opacity: 1; transform: scale(1);}
+        34.6% {opacity: 1; transform: scale(1);}
+        89.6% {opacity: 1; transform: scale(19)rotate(180deg); }
+        100% {opacity: 1; transform: scale(19)rotate(180deg);  }
+      }
+      @keyframes second5a {
+        0% {opacity: 1; transform: scale(1);}
+        44.8% {opacity: 1; transform: scale(1);}
+        /* 80% {opacity: 1; transform: scale(16); } */
+        100% {opacity: 1; transform: scale(19) rotate(180deg);  }
+      }
+      .third {
+        height: 300px;
+        width: 300px;
+        position: relative;
+        top: -500px;
+        left: 1000px;
+        overflow: hidden;
+      }
+      .third1 {
+        position: relative;
+        height: 300px;
+        width: 350px;
+        left: -50px;
+        background-color: blue;
+        display: flex;
+        overflow: hidden;
+      }
+      .third12 {
+        height: 300px;
+        width: 50px;
+        background-color: #00BFFF;
+        /* margin-left: 50px; */
+        animation: third 1s infinite ease-out;
+      }
+      .third13 {
+        height: 300px;
+        width: 50px;
+        background-color: #00BFFF;
+        margin-left: 50px;
+        animation: third 1s infinite ease-out;
+      }
+      .third14 {
+        height: 300px;
+        width: 50px;
+        background-color: #00BFFF;
+        margin-left: 50px;
+        animation: third 1s infinite ease-out;
+      }
+      .third15 {
+        height: 300px;
+        width: 50px;
+        background-color: #00BFFF;
+        margin-left: 50px;
+        animation: third 1s infinite ease-out;
+      }
+      @keyframes third {
+        100% {transform: translate(100px);}
+      }
+      .third2 {
+        position: relative;
+        top: -270px;
+        left: -800px;
+        height: 300px;
+        width: 850px;
+        transform: rotate(-45deg);
+        background-color: pink;
+        animation: third2a 3s infinite  ease-out;
+        display: flex;
+        overflow: hidden;
+      }
+      @keyframes third2a {
+        0% {transform: translateX(0px) rotate(-45deg);}
+        33% {transform: translateX(280px) rotate(-45deg);}
+        66% {transform: translateX(710px) rotate(-45deg);}
+        100% {transform: translateX(1050px) rotate(-45deg);}
+      }
+      .third16 {
+        height: 300px;
+        width: 90px;
+        background-color: red;
+        margin-left: 90px;
+        animation: third3a 2s infinite linear;
+      }
+      .third17 {
+        height: 300px;
+        width: 90px;
+        background-color: red;
+        margin-left: 90px;
+        animation: third3a 2s infinite linear;
+      }
+      .third18 {
+        height: 300px;
+        width: 90px;
+        background-color: red;
+        margin-left: 90px;
+        animation: third3a 2s infinite linear;
+      }
+      .third19 {
+        height: 300px;
+        width: 90px;
+        background-color: red;
+        margin-left: 90px;
+        animation: third3a 2s infinite linear;
+      }
+      @keyframes third3a {
+        100% {transform: translate(180px);}
+      }
+      .fourth {
+        height: 320px;
+        width: 320px;
+        position: relative;
+        top: -400px;
+        left: 100px;
+        background-color: black;
+        display: flex;
+        animation: dance 2s ease-in infinite;
+      }
+      @keyframes dance {
+        10% {background-color: #FF4500;}
+        20% {background-color: #FF8C00;}
+        30% {background-color: #FF1493;}
+        40% {background-color: #FFA07A;}
+        50% {background-color: #FFC0CB;}
+        60% {background-color: #FFA500;}
+        70% {background-color: #FF0000;}
+        80% {background-color: #CD5C5C;}
+        90% {background-color: #DC143C;}
+        100% {background-color: red;}
+      }
+      .td1,.td2,.td3,.td4,.td5,.td6,.td7,.td8  {
+        height: 320px;
+        width: 40px;
+      }
+      .td1 div,.td2 div,.td3 div,.td4 div,.td5 div,.td6 div,.td7 div,.td8 div {
+        height: 40px;
+        width: 40px;
+        /* border-radius: 50%; */
+      }
+      .t14, .t15, .t18, .t19, .t23, .t31, .t39, .t42, .t43, .t47, .t53, .t54 {
+        animation: emoji 3s alternate ease-in infinite;
+      }
+      @keyframes emoji {
+        100% {background-color: yellow;}
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="first">
+      <div class="first1"></div>
+      <div class="first2"></div>
+      <div class="first3"></div>
+      <div class="first4"></div>
+      <div class="first5"></div>
+      <div class="first6"></div>
+      <div class="first7"></div>
+      <div class="first8"></div>
+      <div class="first9"></div>
+    </div>
+    <div class="second">
+      <div class="second1"></div>
+      <div class="second2"></div>
+      <div class="second3"></div>
+      <div class="second4"></div>
+      <div class="second5"></div>
+    </div>
+    <div class="third">
+      <div class="third1">
+        <div class="third12"></div>
+        <div class="third13"></div>
+        <div class="third14"></div>
+        <div class="third15"></div>
+      </div>
+      <div class="third2">
+        <div class="third16"></div>
+        <div class="third17"></div>
+        <div class="third18"></div>
+        <div class="third19"></div>
+      </div>
+    </div>
+    <div class="fourth">
+      <div class="td1">
+        <div class="t1"></div>
+        <div class="t2"></div>
+        <div class="t3"></div>
+        <div class="t4"></div>
+        <div class="t5"></div>
+        <div class="t6"></div>
+        <div class="t7"></div>
+        <div class="t8"></div>
+      </div>
+      <div class="td2">
+        <div class="t9"></div>
+        <div class="t10"></div>
+        <div class="t12"></div>
+        <div class="t13"></div>
+        <div class="t14"></div>
+        <div class="t15"></div>
+        <div class="t16"></div>
+      </div>
+      <div class="td3">
+        <div class="t17"></div>
+        <div class="t18"></div>
+        <div class="t19"></div>
+        <div class="t20"></div>
+        <div class="t21"></div>
+        <div class="t22"></div>
+        <div class="t23"></div>
+        <div class="t24"></div>
+      </div>
+      <div class="td4">
+        <div class="t25"></div>
+        <div class="t26"></div>
+        <div class="t27"></div>
+        <div class="t28"></div>
+        <div class="t29"></div>
+        <div class="t30"></div>
+        <div class="t31"></div>
+        <div class="t32"></div>
+      </div>
+      <div class="td5">
+        <div class="t33"></div>
+        <div class="t34"></div>
+        <div class="t35"></div>
+        <div class="t36"></div>
+        <div class="t37"></div>
+        <div class="t38"></div>
+        <div class="t39"></div>
+        <div class="t40"></div>
+      </div>
+      <div class="td6">
+        <div class="t41"></div>
+        <div class="t42"></div>
+        <div class="t43"></div>
+        <div class="t44"></div>
+        <div class="t45"></div>
+        <div class="t46"></div>
+        <div class="t47"></div>
+        <div class="t48"></div>
+      </div>
+      <div class="td7">
+        <div class="t49"></div>
+        <div class="t50"></div>
+        <div class="t51"></div>
+        <div class="t52"></div>
+        <div class="t53"></div>
+        <div class="t54"></div>
+        <div class="t55"></div>
+        <div class="t56"></div>
+      </div>
+      <div class="td8">
+        <div class="t57"></div>
+        <div class="t58"></div>
+        <div class="t59"></div>
+        <div class="t60"></div>
+        <div class="t61"></div>
+        <div class="t62"></div>
+        <div class="t63"></div>
+        <div class="t64"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
